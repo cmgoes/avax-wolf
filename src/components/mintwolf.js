@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import "../styles/mintingwolf.scss";
 import wolfPolice from "../imgs/wolfPolice.png";
@@ -10,7 +11,7 @@ const MintingWolf = () => {
       <div className="mint-header">
         <h1>MINTING</h1>
         <div class="header-btns">
-          <a href="/">
+          <Link to="/">
             <div class="BorderBox" style={{padding: "2px", position: "relative", width: "fit-content"}}>
               <div class="BorderBox-border" style={{width: "2px", background: "white", top: "2px", bottom: "2px", left: "0px", position: "absolute"}}>
               </div>
@@ -24,7 +25,7 @@ const MintingWolf = () => {
                 BACK TO MENU
               </div>
             </div>
-          </a>
+          </Link>
           <div class="header-metamask">
             <div class="" style={{padding: "2px", position: "relative", width: "fit-content"}}>
               <div class="BorderBox_border__3cuuu" style={{width: "2px", background: "rgb(253, 205, 1)", top: "2px", bottom: "2px", left: "0px", position: "absolute"}}>

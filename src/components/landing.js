@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import "../styles/landing.scss";
 import homeTitle from "../imgs/homeTitle.png";
 
@@ -10,10 +10,10 @@ const Landing = () => {
       <div className="home-modal">
         <img src={homeTitle} className="home-title" alt="" />
         <div className="home-links">
-          <a href="/minting">minting</a>
-          <a href="/staking">heist (staking)</a>
-          <a href="/vault">money laundry (vault)</a>
-          <a href="/mint-wolf">gen 0 holders free mint</a>
+          <Link to="/minting">minting</Link>
+          <Link to="/staking">heist (staking)</Link>
+          <Link to="/vault">money laundry (vault)</Link>
+          <Link to="/mint-wolf">gen 0 holders free mint</Link>
         </div>
         <div className="home-sociallinks">
           <a href="https://twitter.com/policethiefnft" target="_blank" rel="noreferrer">
@@ -36,11 +36,11 @@ const Landing = () => {
             </svg>
           </a>
         </div>
-        <a class="home-btn" href="/whitepaper">
+        <Link class="home-btn" to="/whitepaper">
           <svg className="home-btn-svg-1" width="48" height="57" viewBox="0 0 48 57" xmlns="http://www.w3.org/2000/svg" style={{marginTop: "-7px"}}><g fill="none" fill-rule="evenodd"><path d="m37.81 0-.001 4.726h4.726v4.726h4.727v38.991h-4.727v3.545l-4.726-.001v4.727H9.452v-4.727H4.726v-3.544H0V9.453l4.726-.001V4.726h4.726V0H37.81z" fill="#2E3A75"></path><path d="m37.81 0-.001 4.726h4.726v4.726h4.727V37.81h-4.727v4.726H37.81v4.727H9.452v-4.727H4.726V37.81H0V9.452h4.726V4.726h4.726V0H37.81z" fill="#FDCD01"></path><path fill="#FFEFA9" d="M18.905 0h4.726v4.726h-4.726zM27.175 0h10.634v4.726H27.175zM37.809 4.726h4.726v4.726h-4.726zM0 43.717h4.726v4.726H0zM4.726 47.262h4.726v4.726H4.726zM42.535 9.452h4.726v8.271h-4.726z"></path><g fill-rule="nonzero"><path fill="#2E3A75" d="M18.808 37.5v-2.1h2.077v-2.1h2.077v-2.1h2.076v2.1h2.077v2.1h2.077v2.1H37.5v-21h-8.308V27h-2.077v-2.1h-2.077v-2.1h-2.076v2.1h-2.077V27h-2.077V16.5H10.5v21z"></path><path fill="#FFF" d="M18.808 33v-2.1h2.077v-2.1h2.077v-2.1h2.076v2.1h2.077v2.1h2.077V33H37.5V12h-8.308v10.5h-2.077v-2.1h-2.077v-2.1h-2.076v2.1h-2.077v2.1h-2.077V12H10.5v21z"></path></g></g></svg>
           <svg className="home-btn-svg-2" width="48" height="57" viewBox="0 0 48 57" xmlns="http://www.w3.org/2000/svg" style={{marginTop: "-7px"}}><g fill="none" fill-rule="evenodd"><path d="m37.81 6-.001 4.726h4.726v4.726h4.727v32.991h-4.727v3.545l-4.726-.001v4.727H9.452v-4.727H4.726v-3.544H0v-32.99l4.726-.001v-4.726h4.726V6H37.81z" fill="#2E3A75"></path><path d="m37.81 6-.001 4.726h4.726v4.726h4.727V43.81h-4.727v4.726H37.81v4.727H9.452v-4.727H4.726V43.81H0V15.452h4.726v-4.726h4.726V6H37.81z" fill="#CEA700"></path><path fill="#2E3A75" d="M0 43.717h4.726v4.726H0zM4.726 47.262h4.726v4.726H4.726z"></path><g fill-rule="nonzero"><path fill="#2E3A75" d="M18.808 42v-2.1h2.077v-2.1h2.077v-2.1h2.076v2.1h2.077v2.1h2.077V42H37.5V21h-8.308v10.5h-2.077v-2.1h-2.077v-2.1h-2.076v2.1h-2.077v2.1h-2.077V21H10.5v21z"></path><path fill="#FFF" d="M18.808 37.5v-2.1h2.077v-2.1h2.077v-2.1h2.076v2.1h2.077v2.1h2.077v2.1H37.5v-21h-8.308V27h-2.077v-2.1h-2.077v-2.1h-2.076v2.1h-2.077V27h-2.077V16.5H10.5v21z"></path></g></g></svg>
           WHITEPAPER
-        </a>
+        </Link>
       </div>
     </div>
   );

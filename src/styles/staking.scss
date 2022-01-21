@@ -111,39 +111,39 @@ body {
     @media (min-height: 860px) {
       background-size: auto 100%;      
     }  
+    @media (max-width: 960px) {
+      height: calc(100vh - 200px);  
+    } 
     @media (max-width: 767px) {
       height: calc(100vh - 160px);
       padding-left: 0;      
     }  
-
-    @media (max-width: 960px) {
-      height: calc(100vh - 200px);  
-    } 
+    
     .Heist-heistBox {
       display: flex;
       justify-content: center;
       height: 100%;
-      @media (max-width: 767px) {
-        flex-direction: column;
-        height: auto;      
-      }   
       @media (max-width: 960px) {
         flex-direction: column;
         height: auto; 
       }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        height: auto;      
+      }         
       .Heist-container {
         background: rgba(19,20,21,.8);
         padding: 34px 40px;
         width: calc(100% - 392px);
         min-height: 680px;
         height: 100%;
-        @media (max-width: 767px) {
-          width: 100%;
-          padding: 34px 20px;     
-        }   
         @media (max-width: 960px) {
           width: calc(100% - 40px); 
         }
+        @media (max-width: 767px) {
+          width: 100%;
+          padding: 34px 20px;     
+        }           
         .Heist-heistTabHeader {
           display: flex;
           .Heist-active {

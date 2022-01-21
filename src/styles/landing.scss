@@ -1,0 +1,113 @@
+@font-face {
+  font-family: UpheavalTT-BRK;
+  src: url('../font/upheavtt.ttf');
+}
+
+.landing-container {
+  background: url('../imgs/landing-banner.jpg') 50% no-repeat;
+  padding: 0 10px;
+  min-height: 100vh;
+  background-size: auto 100%;
+  font-family: "UpheavalTT-BRK";
+  @media (min-width: 768px) {
+    padding: 0 30px;
+    background-size: 100% 100%;
+  }
+  .version-text {
+    font-size: 28px;
+    text-align: right;
+    padding: 25px 40px;
+    position: absolute;
+    right: 25px;
+  }
+  .home-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(19,20,21,.8);
+    padding: 110px 20px 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+    .home-title {
+      max-width: 640px;
+      height: 48px;
+      object-fit: contain;
+      @media (max-width: 767px) {
+        width: 260px;
+      }
+    }
+    .home-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      a {
+        font-size: 52px;
+        text-shadow: 0 6px 0 #003c62;
+        margin-bottom: 12px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @media (max-width: 767px) {
+          font-size: 34px;          
+        }
+      }
+      a:hover {
+        color: #fdcd01;
+      }
+    }
+
+    .home-sociallinks {
+      position: relative;
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 10px;
+        transition: all .4s ease;
+      }
+      a:hover {
+        transform: scale(1.15);
+      }
+    }
+    .home-btn {
+      font-size: 39.5px;
+      text-shadow: 0 3px 0 #2e3a75;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: white;
+      @media (max-width: 767px) {
+        font-size: 24px;              
+      }
+      svg {        
+        margin-bottom: -6px;
+        margin-right: 20px;
+        @media (max-width: 767px) {
+          width: 28px;
+          margin-bottom: -10px;
+        }
+      }
+      .home-btn-svg-1 {
+        display: block;
+      }
+      .home-btn-svg-2 {
+        display: none;
+      }
+      &:hover {
+        color: rgb(253, 205, 1);
+        .home-btn-svg-1 {
+          display: none;
+        }
+        .home-btn-svg-2 {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
